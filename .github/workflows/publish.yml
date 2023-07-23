@@ -9,8 +9,6 @@ steps:
 uses: docker/login-action@v1
 with:
 registry: ghcr.io
-username: ${{ github.actor}}
-password: ${{ secrets.DIBPAT }}
 - name: 
 run: |
        docker build . --tag ghcr.io/dibyendu19/hello-docker-gcr-demo:latest
